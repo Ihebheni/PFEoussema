@@ -64,4 +64,14 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
     ];
+
+    // app/Http/Kernel.php
+
+protected $routeMiddleware = [
+    // ...
+    'role.redirect' => \App\Http\Middleware\RedirectIfAuthenticatedByRole::class,
+    'role' => \App\Http\Middleware\RoleMiddleware::class,
+
+];
+
 }
