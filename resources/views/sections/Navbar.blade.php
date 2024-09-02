@@ -11,10 +11,17 @@
 
 	  <div class="collapse text-center navbar-collapse" id="navbarsid">
 		<ul class="navbar-nav mx-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		   <li class="nav-item dropdown">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Textimonial">Textimonial</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Course">Course</a></li>
+
+               <li class="nav-item"><a class="nav-link" href="#contactus">Contact</a></li>
+		   {{-- <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages.</a>
 				<ul class="dropdown-menu  text-center" aria-labelledby="dropdown03">
 				  <li><a class="dropdown-item" href="about.html">About</a></li>
@@ -32,7 +39,7 @@
 				  <li><a class="dropdown-item" href="blog-single.html">Blog Details</a></li>
 				</ul>
 		  </li>
-		   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+		   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> --}}
 		</ul>
         <div class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center mt-4 mt-lg-0 mb-3 mb-lg-0">
             @if (Route::has('login'))
