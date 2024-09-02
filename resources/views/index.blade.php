@@ -9,6 +9,7 @@
   <meta name="description" content="GYm,fitness,business,company,agency,multipurpose,modern,bootstrap4">
 
   <meta name="author" content="Themefisher.com">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>GymFit| Fitness template</title>
 
@@ -28,6 +29,12 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.0/sweetalert2.min.css">
+
+<!-- SweetAlert JS -->
+
+
 </head>
 <body>
 
@@ -37,6 +44,10 @@
 @include('sections.Navbar')
 <!-- Header Close -->
 <div class="main-wrapper ">
+    <!-- Display SweetAlert -->
+
+
+
 <!-- Section Menu End -->
 <!-- Section Slider Start -->
 <!-- Slider Start -->
@@ -95,6 +106,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&amp;callback=initMap"></script>
 
     <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.0/sweetalert2.all.min.js"></script>
+
 
   </body>
 

@@ -1,9 +1,9 @@
 
 <nav class="navbar navbar-expand-lg navigation fixed-top" id="navbar">
 	<div class="container-fluid">
-	  <a class="navbar-brand" href="index.html">
-	  		<h2 class="text-white text-capitalize"></i>Gym<span class="text-color">Fit</span></h2>
-	  </a>
+	  <a class="navbar-brand" href="/">
+        <h2 class="text-white text-capitalize">Gym<span class="text-color">NationTN</span></h2>
+    </a>
 
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsid" aria-controls="navbarsid" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="ti-view-list"></span>
@@ -19,27 +19,7 @@
               <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="#Textimonial">Textimonial</a></li>
               <li class="nav-item"><a class="nav-link" href="#Course">Course</a></li>
-
                <li class="nav-item"><a class="nav-link" href="#contactus">Contact</a></li>
-		   {{-- <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages.</a>
-				<ul class="dropdown-menu  text-center" aria-labelledby="dropdown03">
-				  <li><a class="dropdown-item" href="about.html">About</a></li>
-				  <li><a class="dropdown-item" href="trainer.html">Trainer</a></li>
-				  <li><a class="dropdown-item" href="course.html">Courses</a></li>
-				</ul>
-		  </li>
-		   <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-		   <li class="nav-item"><a class="nav-link" href="pricing.html">Memebership</a></li>
-		   <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog.</a>
-				<ul class="dropdown-menu  text-center text-lg-left" aria-labelledby="dropdown05">
-				  <li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
-				  <li><a class="dropdown-item" href="blog-sidebar.html">Blog Sidebar</a></li>
-				  <li><a class="dropdown-item" href="blog-single.html">Blog Details</a></li>
-				</ul>
-		  </li>
-		   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> --}}
 		</ul>
         <div class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center mt-4 mt-lg-0 mb-3 mb-lg-0">
             @if (Route::has('login'))

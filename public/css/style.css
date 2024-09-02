@@ -61,7 +61,7 @@ html, body {
 }
 
 .navbar-toggle .icon-bar {
-  background: #f5634b;
+  background: #193ee2;
 }
 
 input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
@@ -73,7 +73,7 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
 
 input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
   box-shadow: none;
-  border: 1px solid #f5634b;
+  border: 1px solid #4b64f5;
 }
 
 .form-control {
@@ -83,7 +83,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #f5634b;
+  border: 1px solid #4b64f5;
 }
 
 .btn {
@@ -99,26 +99,26 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-main, .btn-transparent, .btn-small {
-  background: linear-gradient(90deg, #f5634b 0%, #fe9418 100%);
+  background: linear-gradient(90deg, #4b64f5 0%, #1851fe 100%);
   color: #fff;
 }
 
 .btn-main:hover, .btn-transparent:hover, .btn-small:hover {
-  background: linear-gradient(90deg, #fe9418 0%, #f5634b 100%);
+  background: linear-gradient(90deg, #1851fe 0%, #4b64f5 100%);
   color: #fff !important;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
 .btn-solid-border {
-  border: 2px solid #f5634b;
+  border: 2px solid #4b64f5;
   background: transparent;
   color: #fff;
 }
 
 .btn-solid-border:hover {
-  border: 2px solid #f5634b;
-  background: #f5634b;
+  border: 2px solid #4b64f5;
+  background: #4b64f5;
 }
 
 .btn-white {
@@ -128,20 +128,20 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-white:hover {
-  border: 1px solid #f5634b;
-  background: #f5634b;
+  border: 1px solid #4b64f5;
+  background: #4b64f5;
   color: #fff !important;
 }
 
 .btn-transparent {
   background: transparent;
   padding: 0;
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .btn-transparent:hover {
   background: transparent;
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .btn-large {
@@ -182,7 +182,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .bg-primary {
-  background: #f5634b !important;
+  background: #4b64f5 !important;
 }
 
 .section {
@@ -246,7 +246,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .text-color {
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .text-black {
@@ -276,7 +276,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #f5634b !important;
+  color: #4b64f5 !important;
   text-decoration: none !important;
   outline: 0;
 }
@@ -307,7 +307,7 @@ a:hover, a:focus {
 }
 
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .top-header {
@@ -363,7 +363,7 @@ a:hover, a:focus {
 
 .dropdown-item:hover {
   background: transparent;
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 ul.dropdown-menu li {
@@ -457,8 +457,8 @@ ul.dropdown-menu li {
   width: 100%;
   height: 0px;
   transition: all 600ms ease;
-  background: linear-gradient(90deg, #f5634b 0%, #fe9418 100%);
-  border-color: #f5634b;
+  background: linear-gradient(90deg, #4b64f5 0%, #1851fe 100%);
+  border-color: #4b64f5;
 }
 
 .hover-style-1 h3, .hover-style-1 p, .hover-style-1 a, .hover-style-1 i, .hover-style-1 h4 {
@@ -490,7 +490,7 @@ ul.dropdown-menu li {
 }
 
 .course .card-body a h4:hover {
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .course-widget li a {
@@ -503,7 +503,7 @@ ul.dropdown-menu li {
 }
 
 .team-content-overlay li a:hover {
-  background: #f5634b;
+  background: #4b64f5;
 }
 
 .team-item .card-body {
@@ -567,14 +567,14 @@ ul.dropdown-menu li {
 }
 
 .team-wrap ul li a:hover {
-  background: #f5634b;
-  border-color: #f5634b;
+  background: #4b64f5;
+  border-color: #4b64f5;
   color: #fff !important;
 }
 
 .divider {
   margin: 0 auto;
-  background: #f5634b;
+  background: #4b64f5;
   width: 45px;
   height: 4px;
 }
@@ -593,7 +593,7 @@ ul.dropdown-menu li {
 }
 
 .slick-dots li.slick-active button::before {
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .slick-dots li button::before {
@@ -644,7 +644,7 @@ ul.dropdown-menu li {
 }
 
 .blog .card a h4:hover {
-  color: #f5634b;
+  color: #4b64f5;
 }
 
 .blog-post-meta span {
@@ -689,8 +689,8 @@ ul.dropdown-menu li {
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #f5634b;
-  border-color: #f5634b;
+  background-color: #4b64f5;
+  border-color: #4b64f5;
   color: #fff !important;
 }
 
@@ -751,7 +751,7 @@ ul.dropdown-menu li {
 }
 
 .footer-menu li a:hover {
-  color: #f5634b;
+  color: #4b64f5;
   opacity: 1;
 }
 
