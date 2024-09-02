@@ -103,7 +103,7 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
     <!-- Google Map -->
     <script src="plugins/google-map/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&amp;callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap"></script>
 
     <script src="js/script.js"></script>
 
