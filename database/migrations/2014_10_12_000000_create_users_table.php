@@ -15,11 +15,32 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->text('profile_photo')->nullable();
+            $table->text('couverture_pic')->nullable();
+            $table->enum('role', ['admin', 'coach', 'user'])->default('user');
+            $table->enum('sexe', ['male', 'female']);
+            $table->enum('civility', ['Mr', 'Ms', 'Dr', 'Prof'])->nullable(); // Feel free to modify default values
+            $table->string('phone')->nullable();
+            $table->string('country')->nullable();
+            $table->string('city')->nullable();
+            $table->string('attendance_mode')->nullable();
+            $table->string('occupation')->nullable();
+            $table->string('company_name')->nullable();
+            $table->string('sector')->nullable();
+            $table->text('activity_description')->nullable();
+            $table->boolean('email_subscription');
+            $table->boolean('accepted_terms');
+            $table->boolean('isactivated')->default(true);
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('cin')->nullable();
+            $table->string('secondname')->nullable();
             $table->timestamps();
         });
+
     }
 
     /**

@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'Application' }}</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="{{asset('images/iconnn.png')}}" />
+    <title>GymNationTN:</title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="{{asset('assets/css/nucleo-icons.css" rel="stylesheet')}}" />
+    <link href="{{asset('assets/css/nucleo-svg.css" rel="stylesheet')}}" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="{{asset('assets/css/material-dashboard.css?v=3.1.0')}}" rel="stylesheet" />
     <style>
-        /* Guest Layout Styles */
-        .guest-layout {
-            max-width: 500px;
-            margin: 0 auto;
+        body {
+            margin: 0;
+            padding: 0;
+            display:grid;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            min-height: 100vh;       /* Ensure the body takes the full height of the viewport */
+            background: #ffffff;
+        }
+
+        form {
+            background-color: white; /* Optionally add a background for the form */
             padding: 20px;
-            background-color: #f9f9f9;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .form-group input {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .error-message {
-            color: red;
-            font-size: 0.875rem;
-            margin-top: 4px;
-        }
-
-        .form-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .forgot-password {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 0.875rem;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
-        }
-
-        .submit-button {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            background-color: #007bff;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        .submit-button:hover {
-            background-color: #0056b3;
+            max-width: 500px;        /* Set a max-width to avoid the form being too large */
+            margin: auto ;
         }
     </style>
+
+
 </head>
 <body>
-    <div class="guest-layout">
+    <nav>
+        
+    </nav>
+    <div class="container-fluid py-4">
         <header class="mb-6">
             <h1>Welcome to Our Application</h1>
         </header>
         @yield('content')
     </div>
+
+
+    <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+
+
 </body>
 </html>

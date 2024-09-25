@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="GYm,fitness,business,company,agency,multipurpose,modern,bootstrap4">
+  <link rel="icon" type="image/png" href="{{asset('images/iconnn.png')}}" />
 
   <meta name="author" content="Themefisher.com">
   <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -102,8 +103,11 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
     <!-- Google Map -->
+<<<<<<< HEAD
     <script src="plugins/google-map/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap"></script>
+=======
+>>>>>>> 8b0b510 (asba)
 
     <script src="js/script.js"></script>
 

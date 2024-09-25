@@ -19,11 +19,9 @@ class ReclamationController extends Controller
 
         if ($validator->fails()) {
             return redirect()->back()
-                             ->withErrors($validator)
-                             ->withInput();
+                ->withErrors($validator)
+                ->withInput();
         }
-
-
         $isUser = User::where('email', $request->input('user_email'))->exists();
 
         Reclamation::create([
@@ -35,5 +33,42 @@ class ReclamationController extends Controller
 
         return response()->json(['success' => 'Message Sent'], 200);
     }
+    public function reclamations()
+    {
+        $user = auth()->user();
+        $reclamations = Reclamation::all();
 
+        return view('admin.sections.reclamations.reclamations', [
+            "user" => $user,
+            "reclamations" => $reclamations
+        ]);
+    }
+
+    // Show a single reclamation
+    public function show($id)
+    {
+        $reclamation = Reclamation::findOrFail($id);
+        $user = auth()->user();
+        if ($reclamation->read == false) {
+            $reclamation->read = true;
+            $reclamation->save();
+        }
+
+        return view('admin.sections.reclamations.showreclamation', [
+            "user" => $user,
+            "reclamation" => $reclamation,
+        ]);
+    }
+
+    // Delete a reclamation
+    public function delete($id)
+    {
+        $reclamation = Reclamation::findOrFail($id);
+        $reclamation->delete();
+
+        return redirect()->route('admin.reclamations')->with('success', 'Reclamation deleted successfully.');
+    }
+
+
+    
 }

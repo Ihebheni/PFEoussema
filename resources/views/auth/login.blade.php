@@ -3,7 +3,7 @@
 @section('content')
     <form method="POST" action="{{ route('login') }}">
         @csrf
-
+       <h1>login</h1>
         <!-- Session Status -->
         @if (session('status'))
             <div class="mb-4 text-green-600">
@@ -44,7 +44,7 @@
                 </a>
             @endif
 
-            <button type="submit" class="submit-button">
+            <button type="submit" class="btn btn-primary">
                 {{ __('Log in') }}
             </button>
         </div>
