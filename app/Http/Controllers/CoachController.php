@@ -132,7 +132,7 @@ class CoachController extends Controller
         $user = $this->getAuthenticatedUser();
 
         // Retrieve the coach and include related data
-        $coach = User::with(['posts', 'followers', 'followings', 'enrolledCourses'])
+        $coach = User::with(['posts', 'followers', 'followings', 'createdCourses'])
                      ->findOrFail($id);
 
         return view('showcoach', [
@@ -142,7 +142,7 @@ class CoachController extends Controller
     }
 
 
-   
+
 
 
 

@@ -188,29 +188,30 @@
                 <!-- Enrolled Courses -->
                 <div class="col-12 col-xl-6">
                     <div class="mb-5 ps-3">
-                        <h6 class="mb-1">Enrolled Courses</h6>
+                        <h6 class="mb-1">Created Courses</h6>
                         <p class="text-sm">Courses the user is teaching.</p>
                         <a href="{{ route('startcourse') }}" class="btn btn-primary">Start New Course</a>
                     </div>
                     <div class="row">
-                        @forelse($user->enrolledCourses as $course)
+                        @forelse($user->createdCourses as $course)
                             <div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
                                 <div class="card card-blog card-plain">
                                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-1">
-                                        <a href="{{-- route('viewcourse', $course->id) --}}">
+                                        <a href="{{ route('viewcourse', $course->id) }}">
                                             @if ($course->picture)
-                                                <img src="{{ $course->picture }}" alt="Course Image"
-                                                    class="img-fluid border-radius-lg">
+                                            <img src="{{ asset('storage/' . $course->picture) }}" alt="Course Image" class="img-fluid mb-3">
+                                            @else
+                                                <img src="default-course-image.jpg" alt="Default Course Image" class="img-fluid border-radius-lg">
                                             @endif
                                         </a>
                                     </div>
                                     <div class="card-body p-3">
-                                        <a href="{{-- route('viewcourse', $course->id) --}}" class="text-decoration-none">
+                                        <a href="{{ route('viewcourse', $course->id) }}" class="text-decoration-none">
                                             <h5>{{ $course->title }}</h5>
                                         </a>
                                         <p class="mb-0">{{ $course->description }}</p>
-                                        <a class="btn btn-primary" href="{{-- route('viewcourse', $course->id) --}}">
-                                            viewcourse
+                                        <a class="btn btn-primary" href="{{ route('viewcourse', $course->id) }}">
+                                            View Course
                                         </a>
                                     </div>
                                 </div>
@@ -220,6 +221,7 @@
                         @endforelse
                     </div>
                 </div>
+
 
                 <!-- Posts -->
                 <div class="col-12 col-xl-6">

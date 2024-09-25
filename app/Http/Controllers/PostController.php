@@ -126,5 +126,12 @@ public function update(Request $request, $id)
     return redirect()->back()->with('success', 'Post updated successfully');
 }
 
+public function userPosts()
+{
+$user =auth()->user();
+    $posts = Post::where('user_id', auth()->user()->id)->latest()->get();
+    return view('userPosts', compact('user','posts'));
+}
+
 
 }

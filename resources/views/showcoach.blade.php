@@ -189,11 +189,11 @@
                     <p class="text-sm">Courses the coach is teaching.</p>
                 </div>
                 <div class="row">
-                    @forelse($coach->enrolledCourses as $course)
+                    @forelse($coach->createdCourses as $course)
                         <div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
                             <div class="card card-plain h-100">
                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-1">
-                                    <a href="{{-- route('viewcourse', $course->id) --}}">
+                                    <a href="{{ route('viewcourse', $course->id) }}">
                                         @if ($course->picture)
                                             <img src="{{ $course->picture }}" alt="Course Image"
                                                 class="img-fluid border-radius-lg">
@@ -201,11 +201,11 @@
                                     </a>
                                 </div>
                                 <div class="card-body p-3">
-                                    <a href="{{-- route('viewcourse', $course->id) --}}" class="text-decoration-none">
+                                    <a href="{{ route('viewcourse', $course->id) }}" class="text-decoration-none">
                                         <h5>{{ $course->title }}</h5>
                                     </a>
                                     <p class="mb-0">{{ $course->description }}</p>
-                                    <a class="btn btn-primary" href="{{-- route('viewcourse', $course->id) --}}">
+                                    <a class="btn btn-primary" href="{{ route('viewcourse', $course->id) }}">
                                         viewcourse
                                     </a>
                                 </div>

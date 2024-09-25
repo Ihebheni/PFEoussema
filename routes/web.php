@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActualityController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CoachController;
 use App\Http\Controllers\CommentController;
@@ -52,6 +53,12 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/home', [CoachController::class, 'index'])->name('coach.dashboard');
         Route::get('/startcourse' , [CourseController::class , 'index'])->name('startcourse');
         Route::post('/createcourse' , [CourseController::class , 'store'])->name('courses.store');
+        Route::get('/courses/{course}/edit', [CourseController::class, 'edit'])->name('editcourse');
+        Route::put('/courses/{course}', [CourseController::class, 'update'])->name('updatecourse');
+        Route::delete('/courses/{course}', [CourseController::class, 'destroy'])->name('deletecourse');
+        Route::get('/my-courses', [CourseController::class, 'userCourses'])->name('courses.userCourses');
+
+
     });
 
     // Routes for user role
@@ -81,6 +88,14 @@ Route::middleware(['auth'])->group(function () {
       Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
       Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
       Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+
+
+      Route::get('/courses/{course}', [CourseController::class, 'show'])->name('viewcourse');
+
+      Route::get('/actuality', [ActualityController::class, 'index'])->name('actuality.index');
+      Route::get('/my-posts', [PostController::class, 'userPosts'])->name('posts.userPosts');
+
+      // Route to show authenticated user's courses
 
 
 

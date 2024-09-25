@@ -40,11 +40,20 @@
         <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{-- route('actuality.index') --}}">
+                    <a class="nav-link text-white" href="{{ route('actuality.index') }}">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">article</i> <!-- Icône pour Actuality -->
                         </div>
                         <span class="nav-link-text ms-1">Actuality</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('posts.userPosts')}}">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">notes</i>  <!-- Updated icon for My Posts -->
+                        </div>
+                        <span class="nav-link-text ms-1">My Posts</span>
                     </a>
                 </li>
 

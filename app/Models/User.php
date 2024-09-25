@@ -95,9 +95,9 @@ class User extends Authenticatable
     }
 
     // A user can enroll in many courses
-    public function enrolledCourses()
+    public function createdCourses()
     {
-        return $this->belongsToMany(Course::class, 'course_enrollments', 'user_id', 'course_id');
+        return $this->hasMany(Course::class, 'coach_id');
     }
 
     /**
